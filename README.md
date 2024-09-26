@@ -71,7 +71,7 @@ The dataset used in this project was sourced from [Aman Kharwal's GitHub reposit
 
 The average impressions, likes, comments, and shares were calculated for each day of the week to identify the best days for posting.
 
-![Impressions by day of the week]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/impression%20by%20day%20of%20the%20week.png))
+![Impressions by day of the week](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/8d91d0a7e6acf6c1038aacbfd77d0e857a0ebfee/impression%20by%20day%20of%20the%20week.png)
 
 ### Insights:
 - **Tuesday** has the highest average impressions, suggesting that posts made on this day tend to reach more people.
@@ -84,7 +84,7 @@ This graph can help in understanding the best days to post content to maximize r
 
 The average impressions, likes, comments, and shares were calculated for each hashtag to identify the most effective hashtags.
 
-![Top 5 hashtags]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/top%205%20hashtags.png))
+![Top 5 hashtags](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/8d91d0a7e6acf6c1038aacbfd77d0e857a0ebfee/top%205%20hashtags.png)
 
 ### Insights:
 - Each hashtag has two bars: one for **Impressions** (in blue) and one for **Likes** (in orange).
@@ -99,7 +99,7 @@ This graph helps identify which hashtags are most effective in reaching a larger
 
 A correlation heatmap was generated to understand the relationships between different engagement metrics.
 
-![correlation heatmap]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/correlation%20heatmap%20on%20engagements.png))
+![correlation heatmap](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/8d91d0a7e6acf6c1038aacbfd77d0e857a0ebfee/correlation%20heatmap%20on%20engagements.png)
 
 ### Insights:
 - **Diagonal Line**: The diagonal from the top left to the bottom right shows perfect correlations (value of 1) as it represents each metric's correlation with itself.
@@ -117,7 +117,7 @@ This heatmap helps in understanding how different engagement metrics are related
 
 The distribution of likes, comments, and shares was plotted to understand the spread and central tendency of these metrics.
 
-![Engagement distribution]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/engagement%20distribution.png))
+![Engagement distribution](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/8d91d0a7e6acf6c1038aacbfd77d0e857a0ebfee/engagement%20distribution.png)
 
 ### Insights:
 - **Likes (Blue Bars)**: The frequency of likes is highest at the lower end of the engagement metrics, indicating that most posts receive a lower number of likes.
