@@ -25,7 +25,7 @@ This project involves analyzing Instagram data to gain insights into user engage
 
   ---
 
-## Import Libraries
+## Importing Libraries
 
 To begin this project, we needed to have imported the following python libraries:
 - pandas
@@ -37,7 +37,7 @@ To begin this project, we needed to have imported the following python libraries
 
 ## Data Description
 
-The dataset used in this project is sourced from [Aman Kharwal's GitHub repository](https://raw.githubusercontent.com/amankharwal/Website-data/master/Instagram%20data.csv). It contains various metrics related to Instagram posts, including:
+The dataset used in this project was sourced from [Aman Kharwal's GitHub repository](https://raw.githubusercontent.com/amankharwal/Website-data/master/Instagram%20data.csv). It contains various metrics related to Instagram posts, including:
 
 - **Date**: The date the post was made.
 - **Impressions**: Total number of impressions the post received.
@@ -59,9 +59,9 @@ The dataset used in this project is sourced from [Aman Kharwal's GitHub reposito
 
 ## Data Preprocessing
 
-1. **Loading Data**: The data is loaded into a pandas DataFrame.
-2. **Data Conversion**: The `Date` column is converted to datetime format.
-3. **Feature Extraction**: The day of the week is extracted from the `Date` column, and hashtags are split into a list for further analysis.
+1. **Loading Data**: The data was loaded into a pandas DataFrame.
+2. **Data Conversion**: The `Date` column was converted to datetime format.
+3. **Feature Extraction**: The day of the week was extracted from the `Date` column, and hashtags were split into a list for further analysis.
 
   ---
 
@@ -69,19 +69,62 @@ The dataset used in this project is sourced from [Aman Kharwal's GitHub reposito
 
 ### Day of the Week Analysis
 
-The average impressions, likes, comments, and shares are calculated for each day of the week to identify the best days for posting.
+The average impressions, likes, comments, and shares were calculated for each day of the week to identify the best days for posting.
+
+![Impressions by day of the week]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/impression%20by%20day%20of%20the%20week.png))
+
+### Insights:
+- **Tuesday** has the highest average impressions, suggesting that posts made on this day tend to reach more people.
+- **Friday** has the lowest average impressions, indicating that posts on this day might not perform as well in terms of reach.
+- Other days like **Monday** and **Wednesday** also show relatively high average impressions, while **Saturday** and **Sunday** are in the middle range.
+
+This graph can help in understanding the best days to post content to maximize reach and engagement on Instagram.
 
 ### Hashtag Analysis
 
-The average impressions, likes, comments, and shares are calculated for each hashtag to identify the most effective hashtags.
+The average impressions, likes, comments, and shares were calculated for each hashtag to identify the most effective hashtags.
+
+![Top 5 hashtags]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/top%205%20hashtags.png))
+
+### Insights:
+- Each hashtag has two bars: one for **Impressions** (in blue) and one for **Likes** (in orange).
+- **#pythonprogrammer** has the highest average impressions, followed closely by **#pythonprogramminglanguage**.
+- **#python3** and **#pythoncoding** also show significant engagement but are slightly lower than the top two.
+- **#pythondeveloper** has the lowest average impressions and likes among the five hashtags.
+- Across all hashtags, impressions are consistently higher than likes, indicating that while many users see the posts, a smaller proportion engage by liking them.
+
+This graph helps identify which hashtags are most effective in reaching a larger audience and generating likes
 
 ### Correlation Analysis
 
-A correlation heatmap is generated to understand the relationships between different engagement metrics.
+A correlation heatmap was generated to understand the relationships between different engagement metrics.
+
+![correlation heatmap]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/correlation%20heatmap%20on%20engagements.png))
+
+### Insights:
+- **Diagonal Line**: The diagonal from the top left to the bottom right shows perfect correlations (value of 1) as it represents each metric's correlation with itself.
+- **High Correlations**:
+  - **Impressions and Likes**: High positive correlation, suggesting that posts with more impressions tend to receive more likes.
+  - **Likes and Comments**: Also show a strong positive correlation, indicating that posts with more likes often receive more comments.
+  - **Shares and Saves**: These metrics are highly correlated, meaning posts that are shared frequently are also often saved.
+- **Moderate Correlations**:
+  - **Impressions and Follows**: Moderate positive correlation, suggesting that posts with higher impressions can lead to an increase in followers.
+  - **Comments and Shares**: Moderate correlation, indicating that posts with more comments are likely to be shared more.
+
+This heatmap helps in understanding how different engagement metrics are related to each other.
 
 ### Distribution Analysis
 
-The distribution of likes, comments, and shares is plotted to understand the spread and central tendency of these metrics.
+The distribution of likes, comments, and shares was plotted to understand the spread and central tendency of these metrics.
+
+![Engagement distribution]([https://github.com/Kay/my-repo/blob/main/images/my_image.png?raw=true](https://github.com/Phenomkay/Instagram-Recommendation-System/blob/79f6a681cc95d0bad0f1619408f9a7d5331ac307/engagement%20distribution.png))
+
+### Insights:
+- **Likes (Blue Bars)**: The frequency of likes is highest at the lower end of the engagement metrics, indicating that most posts receive a lower number of likes.
+- **Comments (Orange Bars)**: Similar to likes, comments are also more frequent at the lower end, suggesting that posts generally receive fewer comments.
+- **Shares (Green Bars)**: Shares follow the same pattern, with the majority of posts being shared less frequently.
+
+Overall, this graph indicates that lower engagement numbers (likes, comments, and shares) are more common, while higher engagement numbers are less frequent. This distribution can help in understanding the typical engagement levels for Instagram posts and setting realistic expectations for post performance.
 
   ---
   
@@ -89,11 +132,11 @@ The distribution of likes, comments, and shares is plotted to understand the spr
 
 ### Top Hashtags
 
-A function is created to recommend the top 5 hashtags based on average impressions and likes.
+A function was created to recommend the top 5 hashtags based on average impressions and likes.
 
 ### Best Days to Post
 
-A function is created to recommend the best days to post based on historical engagement data.
+A function was created to recommend the best days to post based on historical engagement data.
 
   ---
 
